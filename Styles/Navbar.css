@@ -1,0 +1,119 @@
+/* importing fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+:root{
+    --pink : #dd0285;   
+}
+
+#LOGOimg{
+    height: 90px;
+    width: 310px;
+}
+
+#query{
+    width: 400px;
+}
+
+#navbar{
+    position: sticky;
+    top: -190px;
+    cursor: pointer;
+    background-color: white;
+    z-index: 1000;
+}
+#navbar>div{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#advertisement-div{
+    position: relative;
+}
+#advertisement-div>img:first-child{
+    width: 100%;
+}
+
+#advertisement-div>img:last-child{
+    position: absolute;
+    right:5%;
+    bottom: 15%;
+    width: 9%;
+}
+
+/* Search & Logo section in  navbar  */
+#search-section{
+    height: 90px;
+}
+#search-section>div:nth-child(2){
+    display: grid;
+    grid-template-columns: 4fr 5fr 1fr;
+    height:50px;
+    flex-wrap: wrap;   
+}
+#wishlist:hover,
+#account:hover{
+    background-color: pink ;
+}
+#navbar input,select{
+    border: 1px solid rgba(128, 128, 128, 0.075);
+    padding:  0 10px ;
+    color: grey
+}
+select{
+    text-transform: capitalize;
+}
+#search-section>div>button{
+    border: none;
+    padding: 5%;
+    background-color: var(--pink);
+
+}
+#search-section>div img{
+    width: 20px;
+    height: 20px;
+}
+#search-section>div:nth-child(3){
+    display: flex;
+    gap:20px;
+    align-items: center;
+    padding: 10px;
+}
+#wishlist{
+    border: 1px solid black;
+    padding: 10px;
+}
+#account,
+#categories-div>div{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+#account>img{
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    padding: 10px;
+
+}
+
+/* Categories section in  navbar  */
+#categories-div{
+    background-color: var(--pink);
+    height: 60px;
+    padding: 0 8%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+#categories-div>:last-child{
+    height: 100%;
+    padding: 0 20px;
+    background-color: #c60277;
+}

@@ -1,0 +1,91 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-rows: auto;
+    width: 72%;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+#container>div {
+    text-align: center;
+    padding: 10px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.218);
+    border: 50%;
+    font-family: Roboto;
+
+}
+
+#container img{
+    width: 50%;
+    min-width:50%;
+    min-height: 200px;
+}
+#container>div>img+p {
+    font-family: Roboto;
+}
+
+#main {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    /* border: 1px solid; */
+    display: flex;
+}
+
+#sidebar {
+    width: 28%;
+    height: auto;
+    /* border: 1px solid; */
+}
+
+button {
+    background-color: #dd0285;
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: white;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+#select {
+    margin-left: 30%;
+    margin-top: 20px;
+    padding: 5px 10px;
+    width: 300px;
+    border: 1px solid purple;
+}
+
+hr {
+    width: 80%;
+}
+
+#brand {
+
+    margin-top: 20px;
+    padding: 5px 10px;
+}
+
+#pricefilter {
+    margin-top: 20px;
+
+}
+
+#productsfilter {
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+#productsfilter>option {
+    padding-right: 30px;
+}

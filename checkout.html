@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beuty Bebo</title>
+    <link rel="icon" type="image/x-icon" href="./Images/logo.png">
+    <link rel="stylesheet" href="./Styles/Navbar.css">
+    <link rel="stylesheet" href="./Styles/popup.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="./Styles/form.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="container">
+        <form>
+            <h2>Shipping Address</h2>
+            <hr>
+            <label>First Name</label>
+            <input type="text" id="firstname" placeholder="Enter you first name.">
+            <label>Last Name</label>
+            <input type="text" id="lastname" placeholder="Enter you last name.">
+            <label>Street Address</label>
+            <input type="text" id="street">
+            <label>City</label>
+            <input type="text" id="city">
+            <label>State</label>
+            <select id="state">
+                
+                
+                <option value="">Select your state here</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="AP">Arunanchal Pradesh</option>
+                <option value="MH">Assam</option>
+                <option value="MP">Bihar</option>
+                <option value="AP">Chattisgarh</option>
+                <option value="AP">Goa</option>
+                
+                <option value="AP">Gujrat</option>
+                <option value="AP">Harayana</option>
+                <option value="AP">Himachal Pradesh</option>
+                <option value="AP">Jharkhand</option>
+                <option value="AP">Karnataka</option>
+                <option value="AP">Kerala</option>
+                <option value="AP">Madhya Pradesh</option>
+
+            </select>
+            <label>Zip/Postal Code</label>
+            <input type="text" id="zip">
+            <label>Country</label>
+            <select id="country">
+                <option value="IN">India</option>
+            </select>
+            <label>Phone Number</label>
+            <input type="text" id="mob">
+            
+            <hr>
+            <!-- <div>
+                <input type="radio" checked> 
+                <label for="radio">0.00</label> 
+                <label >Max 7 Bussiness days</label>
+            </div> -->
+
+            <h2>Payment Details</h2>
+
+            <label for="Card Number">Card Number</label>
+            <input type="number" id="cardNo">
+
+            <label for="cvv">CVV</label>
+            <input type="number" id="cvv">
+
+
+            <label for="Expiry">Expiry Date</label>
+            <input type="number" id="exp">
+
+            <label for="NameOnCard">Name On Card</label>
+            <input type="text" id="NameOnCard">
+
+        </form>
+        <div>
+            <h2>ORDER SUMMARY</h2>
+            <table id="cartInfo" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th colspan="2">ITEM</th>
+                        <th>PRICE</th>
+                        <th>QUANTITY</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <button id="PaymentBTN">Proceed to Payment</button>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+<script src="./Scripts/checkout.js" type="module"></script>
+</html>
